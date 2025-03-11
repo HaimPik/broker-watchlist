@@ -1,0 +1,56 @@
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Table header */
+th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Table rows */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Change color based on stock movement */
+.positive {
+    color: #008000; /* Green for positive change */
+    font-weight: bold;
+}
+
+.negative {
+    color: #ff0000; /* Red for negative change */
+    font-weight: bold;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for the remove links */
+.remove-link {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.remove-link:hover {
+    text-decoration: underline;
+}
