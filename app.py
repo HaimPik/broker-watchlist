@@ -1,8 +1,11 @@
 from flask import Flask, request ,redirect, url_for, render_template, flash 
 from utils import load_watchlists,save_watchlist,fetch_tickers_data
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 app = Flask(__name__)
-app.secret_key = 'qwerty'
+app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route('/', methods=['GET','POST'])
 def index():
